@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project</title>
+        <style>
+body{
+text-align: center;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: larger;
+font-weight: bolder;
+}
+code{
+color: rgb(158, 16, 186);
+font-size: xx-large;
+}
+div{
+margin: 30px;
+border: 2px solid ;
+padding: 20px;
+}
+h2{
+text-shadow: 2px 2px bisque;
+}
+h1{
+    color: rgb(100, 7, 7);
+    text-shadow: 2px 2px salmon;
+    padding: 5px;
+}
+</style>
+</head>
+
+<body>
+    <h1>Simple Calculator</h1>
+    <div class="div1">
+        <h2>Addition with Javascript</h2>
+        <p id="pq1"></p>
+    </div>
+    <div class="div2">
+        <h2>Substraction with Javascript</h2>
+        <p id="pq2"></p>
+    </div>
+    <div class="div3">
+        <h2>Multiplications with Javascript</h2>
+        <p id="pq3"></p>
+    </div>
+    <div class="div4">
+        <h2>Division with Javascript</h2>
+        <p id="pq4"></p>
+    </div>
+    <script>
+        var sum = function add(e, f) {
+                return (e + f)
+            }
+            document.getElementById("pq1").innerHTML = "Addition of <code>49</code> and <code>51</code> is <code>" + sum(49, 51)
+        
+        var sum = function add(g, h) {
+                return (g - h)
+            }
+            document.getElementById("pq2").innerHTML = "Substraction of <code>56</code> and <code>31</code> is <code>" + sum(56, 31)
+
+        var sum = function add(a, b) {
+            return (a * b)
+        }
+        document.getElementById("pq3").innerHTML = "Multiplication of <code>61</code> and <code>289</code> is <code>" + sum(61, 289)
+
+        var sum = function add(c, d) {
+            return (c / d)
+        }
+        document.getElementById("pq4").innerHTML = "Division of <code>56</code> and <code>7</code> is <code>" + sum(56 , 7)
+        
+    </script>
+
+</body>
+
+</html>
